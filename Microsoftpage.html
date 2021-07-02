@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="micro.css">
+<style>
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        
+        <nav>
+            <ul>
+                <div class="logo">
+                    <img src="images/microsoft.png" width="125px">
+                <li><a href="#Microsoft">Microsoft 365</a></li>
+                <li><a href="">Office</a></li>
+                <li><a href="">Windows</a></li>
+                <li><a href="">Surface</a></li>
+                <li><a href="">Xbox</a></li>
+                <li><a href="">Support</a></li>
+               
+            </ul>
+            <div class="search-container"></div>
+        </nav>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="images/laptop6.jpg"  style="width:120%"  padding="20px"  height="10%">
+  <div class="text"> Surfacepro 7</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="images/laptop2.jpg" style="width:120%">
+  <div class="text">New surface Laptop 4</div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="row">
+  <div class="column">
+    <img src="images/laptop3.jpg" alt="laptop" style="width:50%">
+     <h1 style=font-size:20px;margin-left:50px;">Surface Laptop Go </h1>
+    <p style=margin-left:50px;>Make the most of every day with the sleek style 
+	and performane of our lightest Surface laptop<br><a href="#a">shop now ></a></p>
+    
+  </div>
+  <div class="column">
+    <img src="images/teams.jpg" alt="teams" style="width:50%">
+    <h1 style=font-size:20px;margin-left:100px;">Microsoft Teams </h1>
+    <p style=margin-left:100px;>Chat, call and make plans with family and friends – all in one app
+        .<br><a href="#a">for up to 6 people></a><br><br><a href="#a">for one person></a></p>
+  </div>
+  <div class="column">
+    <img src="images/laptop4.jpg" alt="365" style="width:50%">
+   <h1 style=font-size:20px;margin-left:100px;">Micosoft 365 for business </h1>
+    <p style=margin-left:100px;>Stay a step ahead with powerful apps for productivity,connection and security.
+        <br><a href="#a">Learn more ></a></p>
+
+  </div>
+  <div class="column">
+    <img src="images/xbox.jpg" alt="xbox" style="width:50%">
+    <h1 style=font-size:20px;margin-left:100px;">Xbox & Bethesda Games Showcase</h1>
+    <p style=margin-left:100px;>Get the latest on game releases, plus exciting news and announcements..
+        <br><a href="#a">Stream it on demand></a></p>
+  </div>
+</div>
+<div>
+    <img src="images/pass.webp" style="width: 80%; padding: 20px;">
+</div>
+</body>
+</html>
